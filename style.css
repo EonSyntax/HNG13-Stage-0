@@ -183,6 +183,7 @@ body {
 
 .social-link:hover {
   background-color: var(--accent-hover, #0056b3);
+  color: var(--body-bg);
 }
 
 .social-link:focus {
@@ -375,4 +376,5 @@ button:focus-visible {
 
 .upload-btn:hover {
   background-color: var(--accent-hover, #0056b3);
+  color: var(--body-bg);
 }
