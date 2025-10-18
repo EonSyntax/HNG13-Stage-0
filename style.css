@@ -103,8 +103,6 @@ body {
   transition: border-color 0.2s ease;
 }
 
-
-
 /* Header Content */
 .header-content {
   flex: 1;
@@ -227,8 +225,6 @@ body {
   margin-bottom: 5px;
   transition: color 0.2s ease;
 }
-
-
 
 .custom-list {
   list-style: none;
@@ -360,7 +356,6 @@ button:focus-visible {
     display: none;
   }
 }
-
 
 .upload-btn {
   margin-top: 2px;

@@ -68,8 +68,6 @@ avatarUpload.addEventListener("change", (event) => {
   }
 });
 
-
-
 // Initialize on page load
 document.addEventListener("DOMContentLoaded", () => {
   // Update timestamp immediately
@@ -83,5 +81,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Update timestamp every second to show it's dynamic
 setInterval(updateTimestamp, 1000);
-
-
