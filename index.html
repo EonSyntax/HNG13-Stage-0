@@ -25,11 +25,21 @@
         <div class="profile-header">
           <figure class="avatar-container">
             <img
-              src="https://eonsyntax.vercel.app/assets/profile-pic-C0Yd0Uvo.jpg"
+              id="userAvatar"
+              src="assets/profile-pic.jpg"
               alt="Profile picture of Emmanuel Adebanji"
               class="avatar"
               data-testid="test-user-avatar"
             />
+            <div>
+              <input
+              type="file"
+              id="avatarUpload"
+              accept="image/*"
+              style="display: none"
+              />
+              <button id="uploadBtn" class="upload-btn">Upload Avatar</button>
+            </div>
           </figure>
 
           <div class="header-content">
@@ -54,6 +64,7 @@
           </div>
         </div>
 
+        <h3 class="bio-section-label">Bio</h3>
         <p class="user-bio" data-testid="test-user-bio">
           Passionate full-stack developer and open-source enthusiast. I love
           building accessible web applications that make a difference in
@@ -187,6 +198,7 @@
         id="theme-toggle"
         class="theme-toggle"
         aria-label="Toggle dark mode"
+        aria-pressed="false"
       >
         <svg
           class="sun-icon"

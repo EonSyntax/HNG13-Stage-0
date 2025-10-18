@@ -8,6 +8,8 @@
   --accent-color: hsl(221, 83%, 53%);
   --time-badge-bg: hsl(221, 83%, 96%);
   --time-badge-text: hsl(221, 83%, 35%);
+  --upload-btn-bg: hsl(221, 83%, 96%);
+  --upload-btn-text: hsl(221, 83%, 35%);
   --body-bg: hsl(0, 0%, 98%);
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
   --shadow-lg: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -28,6 +30,8 @@
   --accent-color: hsl(217, 91%, 60%);
   --time-badge-bg: hsl(217, 91%, 16%);
   --time-badge-text: hsl(217, 91%, 80%);
+  --upload-btn-bg: hsl(217, 91%, 16%);
+  --upload-btn-text: hsl(217, 91%, 80%);
   --body-bg: hsl(222, 47%, 8%);
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -98,6 +102,8 @@ body {
   object-fit: cover;
   transition: border-color 0.2s ease;
 }
+
+
 
 /* Header Content */
 .header-content {
@@ -176,7 +182,7 @@ body {
 }
 
 .social-link:hover {
-  background-color: var(--link-hover-bg);
+  background-color: var(--accent-hover, #0056b3);
 }
 
 .social-link:focus {
@@ -209,6 +215,19 @@ body {
   margin-bottom: 12px;
   transition: color 0.2s ease;
 }
+
+.bio-section-label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+  transition: color 0.2s ease;
+}
+
+
 
 .custom-list {
   list-style: none;
@@ -339,4 +358,21 @@ button:focus-visible {
   .theme-toggle {
     display: none;
   }
+}
+
+
+.upload-btn {
+  margin-top: 2px;
+  background-color: var(--upload-btn-bg);
+  color: var(--upload-btn-text);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: var(--accent-hover, #0056b3);
 }
