@@ -96,7 +96,7 @@ body {
 @media (min-width: 768px) {
   .navbar-container {
     height: 64px;
-    padding: 0 24px;
+    padding: 0 110px;
   }
 }
 
@@ -464,7 +464,7 @@ body {
 /* Theme Toggle Button */
 .theme-toggle {
   position: fixed;
-  top: 32px;
+  top: 9px;
   right: 27px;
   width: 48px;
   height: 48px;
@@ -531,8 +531,8 @@ body {
   }
 
   .theme-toggle {
-    top: 60px;
-    right: 12px;
+    top: 4px;
+    right: 60px;
     }
 }
 @media (min-width: 768px) {
@@ -548,9 +548,9 @@ body {
     height: 120px;
   }
 
-  .theme-toggle {
+  /* .theme-toggle {
   top: 90px;
-  }
+  } */
 
   .lists-container {
     grid-template-columns: 1fr 1fr;
