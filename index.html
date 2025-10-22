@@ -20,6 +20,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo" data-testid="nav-logo">Emmanuel Adebanji</a>
+        
+        <div class="navbar-menu">
+          <a href="index.html" class="navbar-link active" data-testid="nav-link-home">Home</a>
+          <a href="contact.html" class="navbar-link" data-testid="nav-link-contact-us">Contact Us</a>
+          <a href="about.html" class="navbar-link" data-testid="nav-link-about-me">About Me</a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" data-testid="nav-mobile-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" data-testid="nav-mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-menu-link active" data-testid="nav-mobile-link-home">Home</a>
+        <a href="contact.html" class="mobile-menu-link" data-testid="nav-mobile-link-contact-us">Contact Us</a>
+        <a href="about.html" class="mobile-menu-link" data-testid="nav-mobile-link-about-me">About Me</a>
+      </div>
+    </div>
+
+
     <main class="container">
       <article class="profile-card" data-testid="test-profile-card">
         <div class="profile-header">

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="description" content="About Emmanuel Adebanji - Learn about my journey, goals, and reflections as a full-stack developer." />
+    <title>About Me - Emmanuel Adebanji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo" data-testid="nav-logo">Emmanuel Adebanji</a>
+        
+        <div class="navbar-menu">
+          <a href="index.html" class="navbar-link" data-testid="nav-link-home">Home</a>
+          <a href="contact.html" class="navbar-link" data-testid="nav-link-contact-us">Contact Us</a>
+          <a href="about.html" class="navbar-link active" data-testid="nav-link-about-me">About Me</a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" data-testid="nav-mobile-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" data-testid="nav-mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-menu-link" data-testid="nav-mobile-link-home">Home</a>
+        <a href="contact.html" class="mobile-menu-link" data-testid="nav-mobile-link-contact-us">Contact Us</a>
+        <a href="about.html" class="mobile-menu-link active" data-testid="nav-mobile-link-about-me">About Me</a>
+      </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" data-testid="theme-toggle">
+      <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+
+    <!-- Main Content -->
+    <main class="container" data-testid="test-about-page">
+      <div class="content-wrapper content-wrapper-extra-wide">
+        <div class="page-header">
+          <h1 class="page-title">About Me</h1>
+          <p class="page-description">
+            Reflections on my journey, aspirations, and growth as a developer
+          </p>
+        </div>
+
+        <!-- Bio Section -->
+        <section class="about-section" data-testid="test-about-bio">
+          <h2>Who I Am</h2>
+          <p>
+            I'm Emmanuel Adebanji, a passionate full-stack developer with a deep love for creating
+            meaningful digital experiences. My journey into software development began with curiosity
+            and has evolved into a genuine commitment to building accessible, user-centered applications.
+          </p>
+          <p>
+            Beyond the code, I believe in the power of technology to solve real-world problems and
+            improve people's lives. Whether I'm contributing to open-source projects or building
+            applications from scratch, I approach each project with dedication and attention to detail.
+          </p>
+          <p>
+            When I'm not at my desk coding, you'll find me riding my motorcycle, gaming with friends,
+            roller skating, or tinkering with the latest tech gadgets. These hobbies keep me balanced
+            and often inspire creative solutions to technical challenges.
+          </p>
+        </section>
+
+        <!-- Goals Section -->
+        <section class="about-section" data-testid="test-about-goals">
+          <h2>My Goals in This Program</h2>
+          <p>
+            My primary goal is to deepen my understanding of full-stack development principles and
+            master modern web technologies. I want to build a strong foundation that will enable me
+            to create scalable, maintainable applications.
+          </p>
+          <ul>
+            <li>
+              <strong>Technical Excellence:</strong> Master React, TypeScript, Node.js, and database design
+              to build production-ready applications
+            </li>
+            <li>
+              <strong>Best Practices:</strong> Learn industry-standard patterns for code organization,
+              testing, and deployment
+            </li>
+            <li>
+              <strong>Collaboration:</strong> Develop strong teamwork skills and learn to communicate
+              technical concepts effectively
+            </li>
+            <li>
+              <strong>Portfolio Building:</strong> Create impressive projects that showcase my skills
+              and solve real problems
+            </li>
+          </ul>
+        </section>
+
+        <!-- Areas of Low Confidence Section -->
+        <section class="about-section" data-testid="test-about-confidence">
+          <h2>Areas Where I'm Building Confidence</h2>
+          <p>
+            Growth happens when we acknowledge our challenges. Here are areas where I'm actively working
+            to improve:
+          </p>
+          <ul>
+            <li>
+              <strong>System Design:</strong> Understanding how to architect large-scale applications
+              with proper separation of concerns and scalability in mind
+            </li>
+            <li>
+              <strong>Testing:</strong> Writing comprehensive unit and integration tests, and adopting
+              a test-driven development mindset
+            </li>
+            <li>
+              <strong>Performance Optimization:</strong> Identifying and resolving bottlenecks in both
+              frontend and backend code
+            </li>
+            <li>
+              <strong>DevOps & Deployment:</strong> Gaining confidence with CI/CD pipelines, containerization,
+              and cloud infrastructure
+            </li>
+          </ul>
+          <p style="color: var(--text-secondary); font-style: italic; margin-top: 16px;">
+            I view these not as weaknesses, but as exciting opportunities for growth. Each challenge
+            is a chance to expand my capabilities.
+          </p>
+        </section>
+
+        <!-- Note to Future Self Section -->
+        <section class="about-section" data-testid="test-about-future-note">
+          <h2>A Note to My Future Self</h2>
+          <p class="note-to-self">Dear Future Me,</p>
+          <p>
+            Remember this moment—the excitement, the uncertainty, and the determination to learn.
+            By the time you read this, you'll have overcome challenges that seem daunting right now.
+          </p>
+          <p>
+            Don't forget why you started: to build things that matter, to solve problems creatively,
+            and to never stop learning. The imposter syndrome you might feel today is just a sign
+            that you're pushing yourself to grow.
+          </p>
+          <p>
+            Celebrate your victories, learn from your mistakes, and always be kind to yourself.
+            The journey is just as important as the destination. Keep coding, keep creating, and
+            most importantly, keep being curious.
+          </p>
+          <p style="font-weight: 500;">You've got this. 🚀</p>
+        </section>
+
+        <!-- Extra Thoughts Section -->
+        <section class="about-section" data-testid="test-about-extra">
+          <h2>Additional Thoughts</h2>
+          <p>
+            I believe that the best developers are not just technically skilled, but also empathetic,
+            collaborative, and committed to continuous improvement. Technology should serve humanity,
+            and every line of code we write has the potential to impact someone's life.
+          </p>
+          <p>I'm particularly passionate about:</p>
+          <ul>
+            <li>
+              <strong>Accessibility:</strong> Making the web usable for everyone, regardless of ability
+            </li>
+            <li>
+              <strong>Open Source:</strong> Contributing to and learning from the developer community
+            </li>
+            <li>
+              <strong>Clean Code:</strong> Writing maintainable, well-documented code that others can understand
+            </li>
+            <li>
+              <strong>Mentorship:</strong> Helping others on their journey, just as I've been helped
+            </li>
+          </ul>
+          <p>
+            Thank you for taking the time to learn about me. I'm excited about what the future holds
+            and look forward to connecting with fellow developers, learners, and creators.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

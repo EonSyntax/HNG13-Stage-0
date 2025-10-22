@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="description" content="Contact Emmanuel Adebanji - Get in touch for project inquiries, collaborations, or just to say hello." />
+    <title>Contact Us - Emmanuel Adebanji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo" data-testid="nav-logo">Emmanuel Adebanji</a>
+        
+        <div class="navbar-menu">
+          <a href="index.html" class="navbar-link" data-testid="nav-link-home">Home</a>
+          <a href="contact.html" class="navbar-link active" data-testid="nav-link-contact-us">Contact Us</a>
+          <a href="about.html" class="navbar-link" data-testid="nav-link-about-me">About Me</a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" data-testid="nav-mobile-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" data-testid="nav-mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-menu-link" data-testid="nav-mobile-link-home">Home</a>
+        <a href="contact.html" class="mobile-menu-link active" data-testid="nav-mobile-link-contact-us">Contact Us</a>
+        <a href="about.html" class="mobile-menu-link" data-testid="nav-mobile-link-about-me">About Me</a>
+      </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" data-testid="theme-toggle">
+      <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="content-wrapper content-wrapper-wide">
+        <div class="page-header">
+          <h1 class="page-title">Contact Us</h1>
+          <p class="page-description">
+            Have a question or want to work together? Fill out the form below and I'll get back to you soon.
+          </p>
+        </div>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="success-message" role="alert" aria-live="polite" data-testid="test-contact-success">
+          <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <div class="success-content">
+            <h3>Message sent successfully!</h3>
+            <p>Thank you for reaching out. I'll respond to your message as soon as possible.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="profile-card" novalidate>
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="contact-name" class="form-label">
+              Full Name <span class="required" aria-label="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              class="form-input"
+              placeholder="John Doe"
+              aria-invalid="false"
+              aria-describedby="name-error"
+              data-testid="test-contact-name"
+              required
+            />
+            <div id="name-error" class="form-error" role="alert" data-testid="test-contact-error-name">
+              <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span class="error-message"></span>
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="contact-email" class="form-label">
+              Email Address <span class="required" aria-label="required">*</span>
+            </label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              class="form-input"
+              placeholder="john@example.com"
+              aria-invalid="false"
+              aria-describedby="email-error"
+              data-testid="test-contact-email"
+              required
+            />
+            <div id="email-error" class="form-error" role="alert" data-testid="test-contact-error-email">
+              <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span class="error-message"></span>
+            </div>
+          </div>
+
+          <!-- Subject Field -->
+          <div class="form-group">
+            <label for="contact-subject" class="form-label">
+              Subject <span class="required" aria-label="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="contact-subject"
+              name="subject"
+              class="form-input"
+              placeholder="Project Inquiry"
+              aria-invalid="false"
+              aria-describedby="subject-error"
+              data-testid="test-contact-subject"
+              required
+            />
+            <div id="subject-error" class="form-error" role="alert" data-testid="test-contact-error-subject">
+              <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span class="error-message"></span>
+            </div>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-group">
+            <label for="contact-message" class="form-label">
+              Message <span class="required" aria-label="required">*</span>
+            </label>
+            <textarea
+              id="contact-message"
+              name="message"
+              class="form-textarea"
+              placeholder="Tell me about your project or inquiry..."
+              aria-invalid="false"
+              aria-describedby="message-error"
+              data-testid="test-contact-message"
+              required
+            ></textarea>
+            <div id="message-error" class="form-error" role="alert" data-testid="test-contact-error-message">
+              <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span class="error-message"></span>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn" data-testid="test-contact-submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
